@@ -1,5 +1,5 @@
 # 3-tier-webapp-using-terraform
-Host a Scalable, Reliable and Secure WordPress Application in 3 Tier Architecture on AWS using Terraform
+Host a Scalable, Reliable and Secure Application in 3 Tier Architecture on AWS using Terraform
 
 ## Introduction:
 This project demonstrates building a highly available, scalable and secure 3 -tier web application using infrastructure as the code "Terraform". Solution consists of three layers web layer, app layer and database layer. In Web layer, we have hosted webapplication (frontend) in multiple availability zones for high availability and in the app layer, multiple EC2 instances are running which inturns connect to the database layer. In DB layer, we have hosted mysql db instance in primary AZ and have a standby instance in other AZ if primary fails. Whole solution is deployed inside the Virtual private cloud which has 2 public subnets contains web servers and 4 private subnet contains app servers and database.
