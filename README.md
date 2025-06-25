@@ -19,46 +19,52 @@ This project demonstrates building a highly available, scalable and secure 3 -ti
 
 ## Terraform Creation:
 1. database-resources.tf
-
 */ Contains the configuration for database resources in AWS
 */ Likely includes RDS or other database-related configurations
 
+---------------------------
 2. ec2-resources.tf
-
 */ Defines EC2 instances and auto-scaling configurations
 */ Contains launch templates for web and application tiers
 */ Configures Auto Scaling Groups (ASG) for both web and app tiers
 
+---------------------------
 3.install-apache.sh
 
 */ Shell script for installing and configuring Apache web server
 */ Used as user data in the web tier launch template
 
+---------------------------
 4. install-mssql.sh
 
 */ Shell script for installing and configuring Microsoft SQL Server
 */ Used as user data in the application tier launch template
 
+---------------------------
 5. network-resources.tf
 
 */ Contains networking configurations
 */ Likely includes VPC, subnet, and routing configurations
 
+---------------------------
 6. provider.tf
 
 */ Defines the AWS provider configuration
 */ Contains provider-specific settings and credentials configuration
 
+---------------------------
 7. securitygroup.tf
 
 */ Contains security group configurations
 */ Defines inbound and outbound traffic rules for the infrastructure
 
+---------------------------
 8. terraform.tfstate
 
 */ Terraform state file
 */ Keeps track of the current state of your infrastructure
 
+---------------------------
 9. terraform.tfstate.backup
 
 */ Backup of the Terraform state file
